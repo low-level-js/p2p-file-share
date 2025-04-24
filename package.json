@@ -1,0 +1,22 @@
+{
+  "name": "p2p-client",
+  "version": "1.0.0",
+  "description": "Sistema para compartirarchivos P2P estilo BitTorrent en Node.js",
+  "main": "peer.js",
+  "scripts": {
+    "start": "node src/peer.js",
+    "seed": "node src/peer.js --port 6881 --file ./ruta_al_archivo",
+    "leech": "node src/peer.js --port 6882 --file ./ruta_al_archivo --peer <host:puerto>"
+  },
+  "keywords": [
+    "p2p",
+    "bittorrent",
+    "file-share",
+    "nodejs"
+  ],
+  "author": "Joel Jaime <joel@alblandino.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
